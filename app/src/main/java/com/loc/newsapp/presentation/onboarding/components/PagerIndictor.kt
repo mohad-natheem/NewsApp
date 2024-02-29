@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import com.loc.newsapp.presentation.Dimens.indicatorSize
+import com.loc.newsapp.presentation.Dimens.IndicatorSize
 import com.loc.newsapp.ui.theme.BlueGray
 
 @Composable
@@ -25,7 +25,7 @@ fun PagerIndictor(
     Row (modifier = modifier, horizontalArrangement = Arrangement.SpaceBetween){
         repeat(times = pageSize){page ->
             Box(modifier = Modifier
-                .size(indicatorSize)
+                .size(IndicatorSize)
                 .clip(CircleShape)
                 .background(if(page == selectedPage) selectedColor else unselectedColor)
             )
