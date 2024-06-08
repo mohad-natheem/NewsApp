@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.loc.newsapp.R
 import com.loc.newsapp.presentation.Dimens
@@ -80,9 +81,9 @@ fun ArticleShimmerEffect(
     }
 }
 
-//@Preview(showBackground = true)
-//@Composable
-//private fun ArticleShimmerPreview() {
-//    ArticleShimmerEffect()
-//}
+@Preview(showBackground = true)
+@Composable
+private fun ArticleShimmerPreview() {
+    ArticleShimmerEffect()
+}
 

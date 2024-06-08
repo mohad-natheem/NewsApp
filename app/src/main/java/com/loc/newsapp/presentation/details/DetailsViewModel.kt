@@ -34,8 +34,6 @@ class DetailsViewModel @Inject constructor(
             is DetailsEvent.RemoveSideEffect ->{
                 sideEffect = null
             }
-
-            else -> {}
         }
     }
 
